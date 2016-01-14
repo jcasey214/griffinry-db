@@ -12,7 +12,7 @@ exports.up = function(knex, Promise) {
     table.decimal('Current_Health').notNullable();
     table.decimal('Current_Energy').notNullable();
     table.dateTime('Last_Updated').notNullable();
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {
