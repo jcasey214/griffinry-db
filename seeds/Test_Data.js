@@ -35,7 +35,8 @@ exports.seed = function(knex, Promise) {
       User_Name: 'JDrill',
       Email: 'JJDrill@gmail.com',
       Role: 'Administrator',
-      DOB: '1995/01/01'
+      DOB: '1995/01/01',
+      Password: '$2a$10$wF4bGweMzEdkKYxQSMsdKekIsqpmijNTMQt8xJcJqDEKImIN7RJeK'
     }),
     knex('users').insert({
       // id: 2,
