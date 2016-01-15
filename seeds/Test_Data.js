@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -164,7 +164,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -188,13 +188,10 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
-
-
-
     knex('adoptions').insert({
       User_Id: 5,
       Pet_Id: 'Finchet',
@@ -203,7 +200,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -215,7 +212,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -227,7 +224,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -239,7 +236,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -251,7 +248,7 @@ exports.seed = function(knex, Promise) {
       Experience: 0,
       Max_Health: 10,
       Max_Energy: 5,
-      Current_Health: 10,
+      Current_Health: 5,
       Current_Energy: 5,
       Last_Updated: new Date()
     }),
@@ -276,6 +273,25 @@ exports.seed = function(knex, Promise) {
     knex('user_resources').insert({
       User_Id: 4,
       Resource_Id: 1,
+      Quantity: 5
+    }),  knex('user_resources').insert({
+      User_Id: 1,
+      Resource_Id: 2,
+      Quantity: 5
+    }),
+    knex('user_resources').insert({
+      User_Id: 2,
+      Resource_Id: 3,
+      Quantity: 5
+    }),
+    knex('user_resources').insert({
+      User_Id: 3,
+      Resource_Id: 2,
+      Quantity: 5
+    }),
+    knex('user_resources').insert({
+      User_Id: 4,
+      Resource_Id: 3,
       Quantity: 5
     }),
     knex('user_resources').insert({
